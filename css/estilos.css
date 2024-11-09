@@ -469,7 +469,9 @@ nav ul li a {
 /*Css Contactos*/
 
 .main-contacto {
-    height: 110vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
     
 }
 .conacto{
