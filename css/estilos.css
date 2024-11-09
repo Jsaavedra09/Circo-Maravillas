@@ -234,7 +234,6 @@ nav ul li a {
     width: 30rem;
 }
 
-
 .block-video {
     display: flex;
     flex-direction: column;
@@ -258,6 +257,48 @@ nav ul li a {
     border: 3px solid var(--second-bg-color);
     border-radius: 3px;
 }
+
+
+ /* Css Espectaculos*/
+
+.main-espectaculos {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.block-espectaculos {
+    border: 2px solid var(--second-bg-color);
+    border-radius: 5px;
+    width: 50%;
+    background-color: var(--main-color);
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.block-espectaculos h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contenido-espectaculos {
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.espectaculos-img img {
+    width: 17rem;
+}
+
+/*Css Fechas*/
+
+
 
 
 
