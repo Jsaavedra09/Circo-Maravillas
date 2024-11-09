@@ -190,7 +190,7 @@ nav ul li a {
 /* Index CSS */
 
 .main-inicio {
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
 }
@@ -266,7 +266,7 @@ nav ul li a {
  /* Css Espectaculos*/
 
 .main-espectaculos {
-    height: 100vh;
+    height: auto;
     display: flex;
     justify-content: center;
 }
@@ -411,7 +411,7 @@ nav ul li a {
 /*Css Fechas*/
 
 .main-fecha {
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
 }
