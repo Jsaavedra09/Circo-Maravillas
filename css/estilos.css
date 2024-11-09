@@ -70,7 +70,7 @@ nav a.active {
     text-decoration: none;
 }
 
-main {
+.main {
     height: 100%;
 }
 
@@ -185,69 +185,79 @@ nav ul li a {
 
 /* Index CSS */
 
+.main-inicio {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 .block-inicio {
     display: flex;
-    width: 80%;
-    padding: 2rem;
-    margin: 2rem auto;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 2rem;
+    margin: 30px;
+}
+
+.cuadrado-texto {
+    border: 3px solid var(--second-bg-color);
+    border-radius: 20%;
+    background-color: #000000;
+    display: flex;
+    width: 40%;
+}
+
+.texto-inicio {
+    display: flex;
+    flex-direction: column;
+    color: var(--text-color);
+    margin: 20px;
+    text-align: center;
     justify-content: space-evenly;
 }
 
-.contenido-inicio {
-    background-color: var(--main-color);
-    border: 3px solid var(--second-bg-color);
-    box-shadow: 0 0 12px var(--second-bg-color);
-    border-radius: 12%;
+.texto-inicio h2 {
+    font-size: 35px;
+}
+
+.texto-inicio p {
+    font-size: 20px;
+    letter-spacing: 0.2px;
+}
+
+.img-inicio {
+    display: flex;
     width: 40%;
-    padding: 2rem;
-    margin: 2rem;
 }
 
-.contenido-inicio h1 {
-    font-size: 40px;
+.block-inicio img {
+    width: 30rem;
+}
+
+
+.block-video {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    margin: 20px;
+}
+
+.block-video h2 {
     text-align: center;
+    margin: 10px;
+    font-size: 30px;
 }
 
-.contenido-inicio p {
-    font-size: 25px;
-    margin: 18px;
-}
-
-.carpita {
-    width: 500px;
+.video-inicio {
     display: flex;
 }
 
-@media (max-width: 450px) {
-    .block-inicio {
-        flex-wrap: wrap;
-        flex-direction: column;
-        width: 90%;
-        justify-content: center;
-        display: flex;
-        padding: 0;
-        align-items: center;
-    }
-    .contenido-inicio {
-        width: 80%;
-    }
-    
-    .contenido-inicio h1 {
-        font-size: 25px;
-        text-align: center;
-    }
-    
-    .contenido-inicio p {
-        text-align: center;
-        font-size: 20px;
-    }
-    
-    .foto-inicio {
-        justify-content: center;
-        display: flex;
-    }
-    
-    .carpita {
-        width: 200px;
-    }
+.block-video img {
+    width: 45rem;
+    border: 3px solid var(--second-bg-color);
+    border-radius: 3px;
 }
+
+
+
