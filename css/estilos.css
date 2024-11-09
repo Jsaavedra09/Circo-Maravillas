@@ -27,7 +27,7 @@ body{
     height: 100%;
     background-image: url('https://noticias.santacruz.gob.ar/media/k2/items/cache/3e233f3bad8ed1bfa88a23b6d5355c38_XL.jpg');
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: absolute;
     background-size: cover;
 }
 
@@ -305,12 +305,13 @@ nav ul li a {
 .main-fecha {
     height: 100vh;
     display: flex;
+    flex-direction: column;
 }
 
 .block-fecha {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 4rem;
     margin: 30px;
 }
 
@@ -322,20 +323,47 @@ nav ul li a {
 .espectaculos-fecha {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     gap: 3rem;
 }
 
 .cuadrado-fecha {
     display: flex;
     flex-direction: column;
+    gap: 3rem;
+    width: 20%;
+    align-items: center;
+}
+
+.texto-fecha {
+    border: 3px solid var(--second-bg-color);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-color);
+}
+
+.texto-fecha h4 {
+    color: #9F8BEC;
+    font-size: 18px;
+    margin: 10px;
+}
+
+.texto-fecha p {
+    font-size: 10px;
+    margin: 10px;
     
 }
 
 .cuadrado-fecha img {
-    width: 20rem;
+    width: 26rem;
 }
 
+.direccion {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
 
 
 
