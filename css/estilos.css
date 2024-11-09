@@ -190,7 +190,7 @@ nav ul li a {
 /* Index CSS */
 
 .main-inicio {
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
 }
@@ -271,7 +271,7 @@ nav ul li a {
  }
 
 .main-espectaculos {
-    height: 100vh;
+    height: auto;
     display: flex;
     justify-content: center;
 }
@@ -363,10 +363,118 @@ nav ul li a {
     right: 0px;
 }
 
+/* Css Nosotros*/
+
+.main-nosotros {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.texto-nosotros {
+    width: 70%;
+    gap: 2rem;
+    margin: 30px;
+}
+
+.texto-nosotros h1 {
+    text-align: center;
+    font-size: 6.5rem; 
+    margin-bottom: 2rem;
+    margin-top: 2rem; 
+    color: var(--bg-color); 
+}
+
+.cuadrado-nosotros {
+    border: 3px solid var(--second-bg-color);
+    border-radius: 15px;
+    background: var(--main-color);
+}
+
+.cuadrado-nosotros p {
+    font-size: 15px;
+    margin: 20px;
+    letter-spacing: 0.2px;
+}
+
+.testimonios h1 {
+    text-align: center;
+    font-size: 6.5rem; 
+    margin-bottom: 2rem;
+    margin-top: 2rem; 
+    color: var(--bg-color); 
+}
+
+.caja-testimonios{
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.testimonios .heading{
+    margin-bottom: 5rem;
+}
+
+.caja-testimonios img{
+    width: 15rem;
+    border-radius: 50%;
+    border: 3px solid var(--main-color);
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+}
+
+.item-testimonio{
+    min-height: 550px;
+    max-width: 440px;
+    background-color: var(--main-color);
+    border: 3px solid rgba(238, 238, 238, 0.3);
+    border-radius: 2rem;
+    margin: 0 2rem;
+    padding: 30px 60px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5rem;
+    color: white;
+    transition: 0.4s ease-in-out;
+}
+
+.item-testimonio:hover{
+    border: 3px solid var(--tercer-color);
+    transform: translateY(-10px)scale(1.03);
+    box-shadow: 0 0 50px var(--tercer-color);
+}
+
+.item-testimonio h2{
+    font-size: 2.8rem;
+}
+
+.item-testimonio p{
+    font-size: 1.5rem;
+}
+
+#estrella{
+    color: goldenrod;
+    font-size: 2.5rem;
+}
+
+
 /*Css Fechas*/
 
 .main-fecha {
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
 }
@@ -411,9 +519,14 @@ nav ul li a {
     font-size: 18px;
     margin: 10px;
 }
+.texto-fecha span{
+    color: #fff;
+    font-size: 15px;
+    margin: 10px;
+}
 
 .texto-fecha p {
-    font-size: 10px;
+    font-size: 14px;
     margin: 10px;
     
 }
@@ -431,7 +544,9 @@ nav ul li a {
 /*Css Contactos*/
 
 .main-contacto {
-    height: 110vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
     
 }
 .conacto{
@@ -499,22 +614,45 @@ nav ul li a {
 }
 
 .informacion h1 {
-    font-size: 4rem; 
+    text-align: center;
+    font-size: 6.5rem; 
     margin-bottom: 2rem;
+    margin-top: 2rem; 
+    color: var(--bg-color); 
 }
 
 .informacion-contenido {
-    background-color: rgba(0, 0, 0, 0.8); 
+    background-color: var(--main-color);
     padding: 3rem;
     border-radius: 1rem;
-    border: 3px solid red; 
+    border: 3px solid red;
+    box-shadow: 0 0 15px var(--second-bg-color);
     max-width: 800px;
-    color: #fff;
 }
 
 .informacion-contenido p {
     font-size: 2rem;
     margin: 1rem 0; 
     line-height: 1.6;
+}
+
+.boton{
+    display: inline-block;
+    padding: 1.5rem 2.8rem;
+    background: var(--main-color);
+    box-shadow: 0 0 5px var(--tercer-color);
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: white;
+    border: 2px solid var(--second-bg-color);
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.boton:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 50px var(--tercer-color);
 }
 
