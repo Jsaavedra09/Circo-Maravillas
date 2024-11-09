@@ -1,43 +1,109 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Circo Maravillas</title>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
+
 <body>
     <header>
         <a href="index.html"><img src="img/logo.png" alt="Logo" class="logo"></a>
         <nav>
             <ul class="sidebar">
-                <li onclick=hideSidebar()><a href="#" class="logo-ham"><svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#ff1e00"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li onclick=hideSidebar()><a href="#" class="logo-ham"><svg xmlns="http://www.w3.org/2000/svg"
+                            height="35px" viewBox="0 -960 960 960" width="35px" fill="#ff1e00">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg></a></li>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="espectaculos.html">Espectaculos</a></li>
                 <li><a href="fechas.html">Fechas</a></li>
                 <li><a href="entradas.html">Entradas</a></li>
                 <li><a href="nosotros.html" class="active">Nosotros</a></li>
-		        <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
             </ul>
             <ul>
                 <li class="hideOnMobile"><a href="index.html">Inicio</a></li>
-                <li class="hideOnMobile"><a href="espectaculos.html">Espectraculos</a></li>
+                <li class="hideOnMobile"><a href="espectaculos.html">Espectaculos</a></li>
                 <li class="hideOnMobile"><a href="fechas.html">Fechas</a></li>
                 <li class="hideOnMobile"><a href="entradas.html">Entradas</a></li>
                 <li class="hideOnMobile"><a href="nosotros.html" class="active">Nosotros</a></li>
-		        <li class="hideOnMobile"><a href="contacto.html">Contacto</a></li>
-                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#ff1e00"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                <li class="hideOnMobile"><a href="contacto.html">Contacto</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            height="35px" viewBox="0 -960 960 960" width="35px" fill="#ff1e00">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg></a></li>
             </ul>
         </nav>
     </header>
     <main>
-
+        <div>
+            <h1>Sobre Nosotros</h1>
+        </div>
+        <div>
+            <p>El proyecto para el Circo Maravillas tiene como objetivo crear un sitio web atractivo y accesible. Este
+                sitio permitirá a las familias y amantes del entretenimiento en vivo conocer los espectáculos, ciudades
+                y fechas de presentación. Incluirá una página de inicio que muestre la esencia del circo, un listado de
+                espectáculos y artistas, y un mapa interactivo para planificar visitas. La compra de entradas será
+                fácil, con opciones accesibles y métodos de pago seguros. También habrá testimonios de espectadores y
+                una sección de preguntas frecuentes para mejorar la experiencia del usuario. Con este enfoque, buscamos
+                atraer a más público y asegurar que todos puedan disfrutar de la magia del circo.</p>
+        </div>
+        <section class="testimonios" id="testimonios">
+            <div class="caja-testimonios">
+               <h2 class="heading">Testimonios</h2>
+               <div class="wrapper">
+                  <div class="item-testimonio">
+                     <img src="img/testimonios/Pablo.jpg" alt="testimonio1">
+                     <h2>Pablo</h2>
+                     <div class="estrellas">
+                        <i class='bx bxs-star' id="estrella"></i>
+                        <i class='bx bxs-star' id="estrella"></i>
+                        <i class='bx bxs-star' id="estrella"></i>
+                        <i class='bx bxs-star' id="estrella"></i>
+                     </div>
+                     <p>"El diseño de la interfaz fue justo lo que necesitábamos. El resultado superó nuestras expectativas
+                        y mejoró la experiencia de usuario."</p>
+                  </div>
+                  <div class="item-testimonio">
+                     <img src="img/testimonios/Aldana.jpg" alt="testimonio1">
+                     <h2>Aldana</h2>
+                     <div class="estrellas">
+                        <i class='bx bxs-star' id="estrella"></i>
+                        <i class='bx bxs-star' id="estrella"></i>
+                        <i class='bx bxs-star' id="estrella"></i>
+                        <i class='bx bxs-star' id="estrella"></i>
+                        <i class='bx bxs-star' id="estrella"></i>
+                     </div>
+                     <p>"Logró optimizar el backend de forma notable. Ahora la plataforma es más estable y
+                        funciona mucho más rápido. Excelente trabajo."</p>
+                  </div>
+                  <div class="item-testimonio">
+                     <img src="img/testimonios/Julia.jpg" alt="testimonio1">
+                     <h2>Julia</h2>
+                     <div class="estrellas">
+                        <i class='bx bxs-star' id="estrella"></i>
+                        <i class='bx bxs-star' id="estrella"></i>
+                        <i class='bx bxs-star' id="estrella"></i>
+                        <i class='bx bxs-star' id="estrella"></i>
+                        <i class='bx bxs-star-half' id="estrella"></i>
+                     </div>
+                     <p>"Su diseño fue simplemente increíble. Supo combinar estética y funcionalidad a la
+                        perfección, mejorando mucho la usabilidad del sitio."</p>
+                  </div>
+               </div>
+            </div>
     </main>
     <footer class="footer">
         <div class="contenido-footer">
-            <p class="copyright">Materia: Diseño y Desarrollo Web | | Curso: 480799 | | Grupo: 4 | | Todos los Derechos Reservados® - Sitio desarrollado para uso educativo 2024</p>
+            <p class="copyright">Materia: Diseño y Desarrollo Web | | Curso: 480799 | | Grupo: 4 | | Todos los Derechos
+                Reservados® - Sitio desarrollado para uso educativo 2024</p>
             <img src="img/LogoUade.png" alt="Logo uade" class="fotouade">
-        </div> 
+        </div>
     </footer>
 </body>
+
 </html>
