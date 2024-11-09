@@ -436,17 +436,20 @@ nav ul li a {
 }
 
 .informacion h1 {
-    font-size: 4rem; 
+    text-align: center;
+    font-size: 6.5rem; 
     margin-bottom: 2rem;
+    margin-top: 2rem; 
+    color: var(--bg-color); 
 }
 
 .informacion-contenido {
-    background-color: rgba(0, 0, 0, 0.8); 
+    background-color: var(--main-color);
     padding: 3rem;
     border-radius: 1rem;
-    border: 3px solid red; 
+    border: 3px solid red;
+    box-shadow: 0 0 15px var(--second-bg-color);
     max-width: 800px;
-    color: #fff;
 }
 
 .informacion-contenido p {
