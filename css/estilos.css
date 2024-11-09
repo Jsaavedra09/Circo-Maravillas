@@ -336,7 +336,94 @@ nav ul li a {
     width: 20rem;
 }
 
+/*Css Contactos*/
 
+.main-contacto {
+    height: 110vh;
+    
+}
+.conacto{
+    background-color: var(--bg-color);
+}
 
+.contacto h1 {
+    text-align: center;
+    font-size: 6.5rem; 
+    margin-bottom: 2rem;
+    margin-top: 2rem; 
+    color: var(--bg-color); 
+}
+
+.contacto form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: 5rem auto;
+    text-align: center;
+}
+
+.contacto .input-group {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    max-width: 800px; 
+}
+
+.contacto .input-group .input-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; 
+}
+
+.contacto form .input-group{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contacto form .input-group input, .contacto form textarea{
+    width: 100%;
+    padding: 2.5rem;
+    font-size: 1.8rem;
+    color: var(--bg-color);
+    background: var(--main-color);
+    border-radius: 2rem;
+    border: 2px solid var(--second-bg-color);
+    margin: 1.5rem 0;
+    resize: none;
+}
+
+.contacto form .boton{
+    margin-top: 2rem;
+}
+
+.informacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem;
+}
+
+.informacion h1 {
+    font-size: 4rem; 
+    margin-bottom: 2rem;
+}
+
+.informacion-contenido {
+    background-color: rgba(0, 0, 0, 0.8); 
+    padding: 3rem;
+    border-radius: 1rem;
+    border: 3px solid red; 
+    max-width: 800px;
+    color: #fff;
+}
+
+.informacion-contenido p {
+    font-size: 2rem;
+    margin: 1rem 0; 
+    line-height: 1.6;
+}
 
 
