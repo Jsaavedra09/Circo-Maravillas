@@ -561,3 +561,23 @@ nav ul li a {
     line-height: 1.6;
 }
 
+.boton{
+    display: inline-block;
+    padding: 1.5rem 2.8rem;
+    background: var(--main-color);
+    box-shadow: 0 0 5px var(--tercer-color);
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: white;
+    border: 2px solid var(--second-bg-color);
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.boton:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 50px var(--tercer-color);
+}
+
