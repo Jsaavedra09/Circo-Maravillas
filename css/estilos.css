@@ -449,9 +449,14 @@ nav ul li a {
     font-size: 18px;
     margin: 10px;
 }
+.texto-fecha span{
+    color: #fff;
+    font-size: 15px;
+    margin: 10px;
+}
 
 .texto-fecha p {
-    font-size: 10px;
+    font-size: 14px;
     margin: 10px;
     
 }
