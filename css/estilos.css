@@ -303,11 +303,12 @@ nav ul li a {
 /* Css Nosotros*/
 
 .main-nosotros {
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 
 .texto-nosotros {
     width: 70%;
@@ -316,14 +317,16 @@ nav ul li a {
 }
 
 .texto-nosotros h1 {
-    font-size: 30px;
     text-align: center;
-    margin: 20px;
+    font-size: 6.5rem; 
+    margin-bottom: 2rem;
+    margin-top: 2rem; 
+    color: var(--bg-color); 
 }
 
 .cuadrado-nosotros {
     border: 3px solid var(--second-bg-color);
-    border-radius: 5px;
+    border-radius: 15px;
     background: var(--main-color);
 }
 
@@ -333,8 +336,12 @@ nav ul li a {
     letter-spacing: 0.2px;
 }
 
-.testimonios{
-    background-color: var(--bg-color);
+.testimonios h1 {
+    text-align: center;
+    font-size: 6.5rem; 
+    margin-bottom: 2rem;
+    margin-top: 2rem; 
+    color: var(--bg-color); 
 }
 
 .caja-testimonios{
@@ -365,7 +372,7 @@ nav ul li a {
 .item-testimonio{
     min-height: 550px;
     max-width: 440px;
-    background: rgba(0, 0, 0, 0.7);
+    background-color: var(--main-color);
     border: 3px solid rgba(238, 238, 238, 0.3);
     border-radius: 2rem;
     margin: 0 2rem;
@@ -382,9 +389,9 @@ nav ul li a {
 }
 
 .item-testimonio:hover{
-    border: 3px solid var(--main-color);
+    border: 3px solid var(--tercer-color);
     transform: translateY(-10px)scale(1.03);
-    box-shadow: 0 0 50px var(--main-color);
+    box-shadow: 0 0 50px var(--tercer-color);
 }
 
 .item-testimonio h2{
@@ -564,5 +571,25 @@ nav ul li a {
     font-size: 2rem;
     margin: 1rem 0; 
     line-height: 1.6;
+}
+
+.boton{
+    display: inline-block;
+    padding: 1.5rem 2.8rem;
+    background: var(--main-color);
+    box-shadow: 0 0 5px var(--tercer-color);
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: white;
+    border: 2px solid var(--second-bg-color);
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.boton:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 50px var(--tercer-color);
 }
 
