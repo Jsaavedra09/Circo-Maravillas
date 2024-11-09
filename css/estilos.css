@@ -265,6 +265,11 @@ nav ul li a {
 
  /* Css Espectaculos*/
 
+ .body-espectaculos {
+    margin: 0;
+    padding: 0;
+ }
+
 .main-espectaculos {
     height: 100vh;
     display: flex;
@@ -288,16 +293,74 @@ nav ul li a {
     margin-top: 20px;
 }
 
-.contenido-espectaculos {
-    margin: 30px;
+.carrusel-list {
+    position: relative;
     display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: 304px;
+    padding: 10px 0px;
+    margin: 0px auto;
+    max-width: 90vw;
+    overflow: hidden;
 }
 
-.espectaculos-img img {
-    width: 17rem;
+.carrusel-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    transition: .5s ease-in-out;
+}
+
+.carrusel {
+    position: relative;
+    width: 210px;
+    padding: 0px 18px;
+    float: left;
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+}
+
+.carrusel a img {
+    object-fit: cover;
+    height: 300px;
+    width: 200px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+    transition: .3s ease-in-out;
+}
+
+.carrusel-arrow {
+    border-radius: 30px;
+    background-color: white;
+    position: absolute;
+    z-index: 4;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    border: 0;
+    cursor: pointer;
+}
+
+.carrusel-arrow:focus {
+    outline: 0;
+}
+
+.carrusel-arrow svg {
+    width: 12px;
+    height: 100%;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.carrusel-prev {
+    left: 0px;
+}
+
+.carrusel-next {
+    right: 0px;
 }
 
 /*Css Fechas*/

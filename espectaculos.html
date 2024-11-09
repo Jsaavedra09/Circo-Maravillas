@@ -6,18 +6,22 @@
     <title>Circo Maravillas</title>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
-<body>
+<body class="body-espectaculos">
     <header>
         <a href="index.html"><img src="img/logo.png" alt="Logo" class="logo"></a>
         <nav>
             <ul class="sidebar">
-                <li onclick=hideSidebar()><a href="#" class="logo-ham"><svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#ff1e00"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li onclick=hideSidebar()><a href="#" class="logo-ham"><svg xmlns="http://www.w3.org/2000/svg"
+                            height="35px" viewBox="0 -960 960 960" width="35px" fill="#ff1e00">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg></a></li>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="espectaculos.html" class="active">Espectaculos</a></li>
                 <li><a href="fechas.html">Fechas</a></li>
                 <li><a href="entradas.html">Entradas</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
-		        <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
             </ul>
             <ul>
                 <li class="hideOnMobile"><a href="index.html">Inicio</a></li>
@@ -25,42 +29,103 @@
                 <li class="hideOnMobile"><a href="fechas.html">Fechas</a></li>
                 <li class="hideOnMobile"><a href="entradas.html">Entradas</a></li>
                 <li class="hideOnMobile"><a href="nosotros.html">Nosotros</a></li>
-		        <li class="hideOnMobile"><a href="contacto.html">Contacto</a></li>
-                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#ff1e00"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                <li class="hideOnMobile"><a href="contacto.html">Contacto</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            height="35px" viewBox="0 -960 960 960" width="35px" fill="#ff1e00">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg></a></li>
             </ul>
         </nav>
     </header>
     <main class="main-espectaculos">
         <section class="block-espectaculos">
-            <h1>Artistas y actos</h1>
-            <div class="contenido-espectaculos">
-                <div class="espectaculos-img">
-                    <img src="img/c1.png" alt="c1">
+            <h1>Artistas y Actos</h1>
+            <div class="carrusel-list" id="carrusel-list">
+                <button class="carrusel-arrow carrusel-prev" id="button-prev" data-button="button-prev"
+                    onclick="app.processingButton(event)">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left"
+                        class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 320 512">
+                        <path fill="currentColor"
+                            d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z">
+                        </path>
+                    </svg>
+                </button>
+                <div class="carrusel-track" id="track">
+                    <div class="carrusel">
+                        <div>
+                            <a>
+                                <picture>
+                                    <img src="img/c1.png" alt="imagen1">
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carrusel">
+                        <div>
+                            <a>
+                                <picture>
+                                    <img src="img/c2.png" alt="imagen2">
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carrusel">
+                        <div>
+                            <a>
+                                <picture>
+                                    <img src="img/c3.png" alt="imagen3">
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carrusel">
+                        <div>
+                            <a>
+                                <picture>
+                                    <img src="img/c4.png" alt="imagen4">
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carrusel">
+                        <div>
+                            <a>
+                                <picture>
+                                    <img src="img/c5.png" alt="imagen5">
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carrusel">
+                        <div>
+                            <a>
+                                <picture>
+                                    <img src="img/c6.png" alt="imagen6">
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="espectaculos-img">
-                    <img src="img/c2.png" alt="c2">
-                </div>
-                <div class="espectaculos-img">
-                    <img src="img/c3.png" alt="c3">
-                </div>
-                <div class="espectaculos-img">
-                    <img src="img/c4.png" alt="c4">
-                </div>
-                <div class="espectaculos-img">
-                    <img src="img/c5.png" alt="c5">
-                </div>
-                <div class="espectaculos-img">
-                    <img src="img/c6.png" alt="c6">
-                </div>
+                <button class="carrusel-arrow carrusel-next" id="button-next" data-button="button-next"
+                    onclick="app.processingButton(event)">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right"
+                        class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 320 512">
+                        <path fill="currentColor"
+                            d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
+                        </path>
+                    </svg>
+                </button>
             </div>
         </section>
-        
     </main>
     <footer class="footer">
         <div class="contenido-footer">
-            <p class="copyright">Materia: Diseño y Desarrollo Web | | Curso: 480799 | | Grupo: 4 | | Todos los Derechos Reservados® - Sitio desarrollado para uso educativo 2024</p>
+            <p class="copyright">Materia: Diseño y Desarrollo Web | | Curso: 480799 | | Grupo: 4 | | Todos los Derechos
+                Reservados® - Sitio desarrollado para uso educativo 2024</p>
             <img src="img/LogoUade.png" alt="Logo uade" class="fotouade">
-        </div> 
+        </div>
     </footer>
     <script src="js/script.js"></script>
 </body>
