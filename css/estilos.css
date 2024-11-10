@@ -624,6 +624,36 @@ nav ul li a {
     background-color: var(--second-bg-color); 
 }
 
+
+/* Css Pagos*/ 
+.main-pagos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+.block-pagos {
+    background: var(--main-color);
+    border: 3px solid var(--second-bg-color);
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    width: 70%;
+    justify-content: space-evenly;
+
+}
+
+.metodo-pago {
+    background: var(--bg-color);
+    border-radius: 5px;
+    width: 15rem;
+}
+
+.metodo-pago img {
+    width: 15rem;
+
+}
 /*Css Contactos*/
 
 .main-contacto {
