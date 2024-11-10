@@ -631,23 +631,47 @@ nav ul li a {
     align-items: center;
     justify-content: center;
     height: auto;
+    margin: 3rem;
 }
 
 .block-pagos {
     background: var(--main-color);
     border: 3px solid var(--second-bg-color);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 2rem;
     width: 70%;
     justify-content: space-evenly;
+    padding: 2rem;
+    margin: 2rem;
+}
 
+.block-pagos h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.cuadro-metodos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 2rem;
+    margin: 30px;
 }
 
 .metodo-pago {
     background: var(--bg-color);
     border-radius: 5px;
-    width: 15rem;
+    width: 16rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease;
+}
+
+.metodo-pago:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 .metodo-pago img {
