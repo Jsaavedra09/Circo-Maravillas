@@ -544,12 +544,14 @@ nav ul li a {
 /*CSS Entradas*/
 
 .main-entradas {
+    height: auto;
     display: flex;
     flex-direction: row;
-    height: auto;
-    justify-content: space-evenly;
-    margin: 4rem;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 3rem;
 }
+
 
 .entradas {
     display: flex;
@@ -571,7 +573,8 @@ nav ul li a {
 }
 
 .entrada p {
-    font-size: 2rem;
+    font-size: 3.5rem;
+    font-weight: 800;
 }
 
 .boton-compra {
@@ -579,12 +582,14 @@ nav ul li a {
     border: 2px solid var(--second-bg-color);
     border-radius: 10px;
     padding: 10px;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+    font-weight: 600;
     transition: 0.5s ease;
 }
 
 .boton-compra:hover {
     transform: scale(1.1);
+    background-color: var(--second-bg-color);
     box-shadow: 0 0 20px var(--second-bg-color);
 }
 
@@ -606,8 +611,8 @@ nav ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
+    width: 100px;
+    height: 70px;
     background-color: #4b4343;
     border-radius: 5px;
     cursor: pointer;
