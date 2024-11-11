@@ -309,7 +309,7 @@ nav ul li a {
     padding: 0;
     align-items: center;
     width: 100%;
-    height: 50%;
+    height: auto;
  }
 
 .main-espectaculos {
@@ -321,15 +321,15 @@ nav ul li a {
 
 .block-espectaculos {
     border: 2px solid var(--second-bg-color);
-    border-radius: 10px;
-    width: 35%;
+    border-radius: 5px;
+    width: 45%;
     background-color: var(--main-color);
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    height: 605px;
-    margin-bottom: 35rem;
-    margin-bottom: 10px;
+    height: auto;
+    margin-bottom: 3rem;
+    padding: 15px;
 }
 
 .block-espectaculos h1 {
@@ -345,13 +345,6 @@ nav ul li a {
     width: auto;
 }
 
-.carousel-item img {
-    display: flex;
-    height: 510px;
-    width: 250px;
-    flex-direction: column;
-    border-radius: 10px;
-}
 
 /* Css Nosotros*/
 
