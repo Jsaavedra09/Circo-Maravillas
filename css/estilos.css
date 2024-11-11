@@ -112,6 +112,12 @@ nav a.active {
     margin-left: 20px;
 }
 
+.consultora {
+    height: auto;
+    width: 70px;
+    margin-left: 20px;
+}
+
 nav ul {
     width: 100%;
     list-style: none;
@@ -750,11 +756,13 @@ nav ul li a {
     align-items: center;
     justify-content: center;
     height: auto;
-    margin: 3rem;
+    margin: 7rem;
+    margin-bottom: 39rem;
 }
 
 .block-pagos {
     background: var(--main-color);
+    border-radius: 15px;
     border: 3px solid var(--second-bg-color);
     display: flex;
     flex-direction: column;
