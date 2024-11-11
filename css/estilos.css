@@ -87,7 +87,7 @@ main {
     padding: 5px 0;
     background: var(--main-color);
     box-sizing: border-box; 
-    margin-top: 22rem;
+    margin-top: 24.5rem;
     position: relative;
     bottom: 0;
 }
@@ -297,9 +297,11 @@ nav ul li a {
         font-size: 20px;
     }
 
-    .block-video img {
-        width: 30rem;
-    }
+    .video-inicio iframe {
+        height: 270px;
+        width: 360px;
+    } 
+
 }
 
  /* Css Espectaculos*/
