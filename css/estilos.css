@@ -201,6 +201,7 @@ nav ul li a {
     justify-content: space-evenly;
     gap: 2rem;
     margin: 30px;
+    flex-wrap: wrap
 }
 
 .cuadrado-texto {
@@ -262,6 +263,36 @@ nav ul li a {
     border-radius: 3px;
 }
 
+@media (max-width:1200px) {
+    .cuadrado-texto {
+        width: 45%;
+    }    
+}
+
+@media (max-width: 450px) {
+    .cuadrado-texto {
+        width: 90%;
+    }
+
+    .cuadrado-texto h2 {
+        font-size: 20px;
+    }
+    .cuadrado-texto p {
+        font-size: 14px;
+    }
+
+    .block-inicio img {
+        width: 15rem;
+    }
+
+    .block-video h2 {
+        font-size: 20px;
+    }
+
+    .block-video img {
+        width: 30rem;
+    }
+}
 
  /* Css Espectaculos*/
 
@@ -375,7 +406,6 @@ nav ul li a {
 
 .texto-nosotros {
     width: 70%;
-    gap: 2rem;
     margin: 30px;
 }
 
@@ -397,6 +427,7 @@ nav ul li a {
     font-size: 15px;
     margin: 20px;
     letter-spacing: 0.2px;
+    text-align: center;
 }
 
 .testimonios h1 {
@@ -427,6 +458,7 @@ nav ul li a {
 }
 
 .wrapper{
+    width: 95%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 3rem;
@@ -470,6 +502,27 @@ nav ul li a {
     font-size: 2.5rem;
 }
 
+@media (max-width:450px) {
+    .texto-nosotros {
+        width: 80%;
+    }
+    .texto-nosotros h1 {
+        font-size: 30px;
+    }
+    .caja-testimonios h1 {
+        font-size: 30px;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .item-testimonio {
+        width: 70%;
+    }
+}
+
 
 /*Css Fechas*/
 
@@ -496,6 +549,7 @@ nav ul li a {
     flex-direction: row;
     justify-content: space-evenly;
     gap: 3rem;
+    flex-wrap: wrap;
 }
 
 .cuadrado-fecha {
@@ -539,6 +593,30 @@ nav ul li a {
     display: flex;
     justify-content: center;
     margin: 20px;
+}
+
+@media (max-width:450px) {
+    .block-fecha h1 {
+        font-size: 25px;
+    }
+
+    .cuadrado-fecha {
+        width: 70%;
+        margin: 20px;
+    }
+
+    .cuadrado-fecha img {
+        width: 20rem;
+    }
+
+    .texto-fecha {
+        width: 75%;
+    }
+
+    .direccion iframe {
+        width: 300px;
+        height: 250px;
+    }
 }
 
 /*CSS Entradas*/
@@ -602,6 +680,13 @@ nav ul li a {
     gap: 1rem;
 }
 
+.asientos h2 {
+    font-size: 25px;
+    color: var(--text-color);
+    text-align: center;
+    margin: 10px;
+}
+
 .fila {
     display: flex;
     justify-content: space-around;
@@ -622,6 +707,40 @@ nav ul li a {
 
 .asiento-seleccionado {
     background-color: var(--second-bg-color); 
+}
+
+@media (max-width:450px) {
+    .main-entradas {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .asientos {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .asiento {
+        width: 50px;
+        height: 40px;
+        margin: 2px;
+    }
+
+    .entradas {
+        align-items: center;
+        gap: 5rem;
+    }
+
+    .entrada {
+        width: 80%;
+        text-align: center;
+    }
+    .entrada p {
+        font-size: 2rem;
+    }
+    .boton-compra {
+        font-size: 1.8rem;
+    }
 }
 
 
@@ -686,8 +805,8 @@ nav ul li a {
     flex-direction: column;
     
 }
-.conacto{
-    background-color: var(--bg-color);
+.contacto{
+    margin: 15px;
 }
 
 .contacto h1 {
@@ -793,3 +912,35 @@ nav ul li a {
     box-shadow: 0 0 50px var(--tercer-color);
 }
 
+@media (max-width:450px) {
+    .contacto form {
+        flex-direction: column;
+    }
+    .contacto .input-group .input-box, .input-group-2{ 
+        width: 80%;
+        gap: 1rem;
+        margin: 1rem;
+        font-size: 1.6rem;
+        margin: 1rem;
+    }
+    
+    .contacto .input-group {
+        gap: 0;
+        
+    }
+
+    .contacto form .input-group input {
+        margin: 1rem;
+        font-size: 1.6rem;
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+    
+    
+    .contacto h1 {
+        font-size: 40px;
+    }
+    .informacion h1 {
+        font-size: 40px;
+    }
+}
