@@ -341,7 +341,7 @@ nav ul li a {
 }
 
 .carousel-inner {
-    height: 90rem;
+    height: auto;
     width: auto;
 }
 
