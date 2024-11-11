@@ -299,6 +299,9 @@ nav ul li a {
  .body-espectaculos {
     margin: 0;
     padding: 0;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
  }
 
 .main-espectaculos {
@@ -316,6 +319,7 @@ nav ul li a {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    height: 425px;
 }
 
 .block-espectaculos h1 {
