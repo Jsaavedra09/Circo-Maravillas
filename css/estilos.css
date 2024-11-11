@@ -74,8 +74,9 @@ nav a.active {
     text-decoration: none;
 }
 
-.main {
-    height: 100%;
+main {
+    height: auto;
+    margin-bottom: 10rem;
 }
 
 .footer {
@@ -86,7 +87,9 @@ nav a.active {
     padding: 5px 0;
     background: var(--main-color);
     box-sizing: border-box; 
-    margin-top: 24.5rem;
+    margin-top: 3rem;
+    position: relative;
+    bottom: 0;
 }
 
 .contenido-footer {
@@ -321,7 +324,6 @@ nav ul li a {
     border-radius: 10px;
     width: 35%;
     background-color: var(--main-color);
-    margin: 30px;
     display: flex;
     flex-direction: column;
     gap: 2rem;
