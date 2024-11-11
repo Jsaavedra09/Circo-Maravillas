@@ -74,8 +74,9 @@ nav a.active {
     text-decoration: none;
 }
 
-.main {
-    height: 100%;
+main {
+    height: auto;
+    margin-bottom: 10rem;
 }
 
 .footer {
