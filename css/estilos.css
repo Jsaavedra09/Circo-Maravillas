@@ -962,3 +962,28 @@ nav ul li a {
         font-size: 40px;
     }
 }
+
+
+#resumen button {
+    display: inline-block;
+    padding: 1.5rem 2.8rem;
+    background: var(--main-color);
+    box-shadow: 0 0 5px var(--tercer-color);
+    border-radius: 30px;
+    font-size: 1.6rem;
+    color: white;
+    border: 2px solid var(--second-bg-color);
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+#resumen button:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 50px var(--tercer-color);
+}
+
+#resumen p {
+    font-size: 30px;
+}
