@@ -35,23 +35,38 @@
         <section class="contacto" id="contacto">
 
             <h1>Contacto</h1>
-            <form action="">
-               <div class="input-group">
+            <<form id="contactForm">
+                <div class="input-group">
                   <div class="input-box">
-                     <input type="text" placeholder="Nombre completo">
-                     <input type="email" placeholder="@Email">
+                    <input type="text" id="nombre" placeholder="Nombre completo">
+                    <span class="error" id="error-nombre">Por favor, ingrese su nombre</span>
                   </div>
+            
                   <div class="input-box">
-                     <input type="number" placeholder="Numero de telefono">
-                     <input type="text" placeholder="Asunto">
+                    <input type="email" id="email" placeholder="@Email">
+                    <span class="error" id="error-email">Por favor, ingrese un email válido</span>
                   </div>
-               </div>
-               <div class="input-group-2">
-                  <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                </div>
+            
+                <div class="input-group">
+                  <div class="input-box">
+                    <input type="number" id="telefono" placeholder="Número de teléfono">
+                    <span class="error" id="error-telefono">Por favor, ingrese su teléfono</span>
+                  </div>
+            
+                  <div class="input-box">
+                    <input type="text" id="asunto" placeholder="Asunto">
+                    <span class="error" id="error-asunto">Por favor, ingrese un asunto</span>
+                  </div>
+                </div>
+            
+                <div class="input-group-2">
+                  <textarea id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                  <span class="error" id="error-mensaje">Por favor, ingrese un mensaje</span>
                   <input type="submit" value="Enviar Mensaje" class="boton">
-               </div>
-            </form>
-         </section>
+                </div>
+              </form>
+            </section>
         
          <section class="informacion">
             <h1>Información</h1>

@@ -841,45 +841,39 @@ nav ul li a {
     color: var(--bg-color); 
 }
 
-.contacto form{
+.contacto form .input-group {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;
-    margin: 5rem auto;
-    text-align: center;
-}
-
-.contacto .input-group {
-    display: flex;
+    flex-wrap: nowrap;
     gap: 2rem;
-    width: 100%;
-    max-width: 800px; 
+    justify-content: center;
 }
 
-.contacto .input-group .input-box {
-    width: 100%;
+.contacto form .input-box {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem; 
+    align-items: flex-start;
+    position: relative;
+    width: 100%;
 }
 
-.contacto form .input-group{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.contacto form .input-group input, .contacto form textarea{
+.contacto form .input-box input,
+.contacto form textarea {
     width: 100%;
     padding: 2.5rem;
-    font-size: 1.8rem;
-    color: var(--bg-color);
+    font-size: 1.6rem;
+    color: var(--text-color);
     background: var(--main-color);
-    border-radius: 2rem;
-    border: 2px solid var(--second-bg-color);
+    border-radius: 1rem;
+    border: 3px solid var(--text-color);
     margin: 1.5rem 0;
     resize: none;
+}
+
+.error {
+    color: red;
+    font-size: 1.4rem;
+    margin-top: 0.3rem;
+    display: none;
 }
 
 .contacto form .boton{
