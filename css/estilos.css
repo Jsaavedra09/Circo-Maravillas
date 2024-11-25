@@ -353,6 +353,12 @@ nav ul li a {
     }
 }
 
+.carousel-inner p {
+    font-size: 30px;
+    text-align: justify;
+    align-items: center;
+    color: white;
+}
 /* Css Nosotros*/
 
 .main-nosotros {
